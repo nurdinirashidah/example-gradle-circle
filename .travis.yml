@@ -1,12 +1,11 @@
+
 language: java
 
-before_install:
- – chmod +x gradlew
+notifications:
+  email: false
 
-jdk: oraclejdk8
-  
-script:
-  - ./gradlew build --scan -s
+jdk:
+  - openjdk8
 
 after_success:
 - bash <(curl -s https://scripts.scantist.com/ci-travis.sh)
