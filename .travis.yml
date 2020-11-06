@@ -1,5 +1,5 @@
 
-language: java
+language: android
 
 install: skip
 
@@ -7,7 +7,7 @@ notifications:
   email: false
 
 jdk:
-  - openjdk8
+  - oraclejdk8
   
 script: mvn clean verify
 
